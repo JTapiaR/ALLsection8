@@ -29,10 +29,10 @@ st.divider()
 # Función para cargar datos
 @st.cache_data
 def load_data():
-    df = pd.read_csv('Datos/Data_Final2.csv')
+    df = pd.read_csv('Datos/ALLData_Final2.csv')
     df['yearBuilt'] = df['yearBuilt'].astype(str)
     df['zpid'] = df['zpid'].astype(str)
-    df['sizediff'] = df['FRM'] - df['rent_estimate']  # Crear la columna sizediff
+    #df['sizediff'] = df['FRM'] - df['rent_estimate']  # Crear la columna sizediff
     return df
 
 @st.cache_data
